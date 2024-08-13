@@ -1,1 +1,122 @@
-atualizando
+/* Reseta padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100vh;
+    background: url('statics/images/header-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.highlight {
+    color: #ff5722;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.about, .skills, .contact {
+    padding: 60px 0;
+    background-color: #282828;
+}
+
+.about h2, .skills h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #ff5722;
+}
+
+.skills .skill-bars {
+    margin-top: 40px;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.skill-progress {
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.skill-level {
+    background-color: #ff5722;
+    height: 100%;
+    transition: width 1s ease;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto
